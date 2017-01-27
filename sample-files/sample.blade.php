@@ -53,7 +53,7 @@
           <input type="hidden" name="success" id="success" value="1">
 
           @if( $questions->id !== 1 )
-          <input type="hidden" name="attempt" id="attempt" value="{{ $attempt = DB::table('results')->where('username', Auth::user()->username)->max('attempt') }}">
+          <input type="hidden" href="http://asdf.com" id="attempt" value="{{ $attempt = DB::table('results')->where('username', Auth::user()->username)->max('attempt') }}">
           @endif
 
           <?php $letter = "A"; ?>
@@ -93,17 +93,6 @@
           </div>
 
         </form>
-
-
-        <!-- <div class="answer-explanation">
-          <p class="selected-answer-manifested">You selected answer C.</p>
-          <h3 class="correct-answer-manifested">Correct Answer: A</h3>
-          <p>When the answer is wrong, an explanation can be given here.</p>
-          <p>Optionally we can display the wrong answers and expalantions at the end of the quiz with the results.</p>
-        </div> -->
-
-
-
 
     </section>
   </div>
