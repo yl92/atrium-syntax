@@ -1,0 +1,118 @@
+.courseware-item {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: $unit / 2;
+  min-height: $unit * 3.5;
+  text-align: left;
+  box-sizing: border-box;
+  user-select: none;
+  transition: 0.2s ease;
+  > * {
+    margin: 0;
+  }
+  &[data-item-size=small] {
+    padding-left: 3.5 * $unit;
+    .courseware-item-title {
+      font-size: inherit;
+    }
+    .courseware-icon {
+      left: 0.5 * $unit;
+      top: 0.5 * $unit;
+      width: $unit * 2.5;
+      height: $unit * 2.5;
+      .material-icons {
+        font-size: $unit * 1.5;
+      }
+    }
+  }
+  &[data-item-size=large] {
+    padding: $unit 0;
+    padding-left: 8 * $unit;
+    margin: 0;
+    .courseware-icon {
+      top: $unit;
+      left: 0;
+      width: $unit * 7;
+      height: $unit * 7;
+      .material-icons {
+        font-size: $unit * 2.5;
+      }
+    }
+    + [data-item-size=large] {
+      border-top: $color-border 1px solid;
+    }
+    @include media($desktop) {
+      padding-right: $unit * 14;
+    }
+  }
+}
+
+a.courseware-item ,
+button.courseware-item {
+  &:hover {
+    background-color: transparentize($white,0.5);
+  }
+  &:active {
+    background-color: transparentize($color-shadow,0.9);
+  }
+}
+
+.courseware-type-tag {
+  @include smallcaps;
+  color: $tint-65;
+}
+
+.courseware-icon {
+  position: absolute;
+  color: $white;
+  display: block;
+  .material-icons {
+    @include align(center);
+  }
+}
+
+[data-courseware-type="course"] {
+  .courseware-icon {
+    background: $color-accent;
+  }
+}
+
+[data-courseware-type="quiz"] {
+  .courseware-icon {
+    background: $theme-palette-1;
+  }
+}
+
+.courseware-item-title {
+  font-size: ms(2);
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 0.25em;
+}
+
+.courseware-item-timestamp {
+  margin: 0;
+  font-size: 85%;
+}
+
+.courseware-status-list {
+  li {
+    display: inline-block;
+    margin: 0;
+    margin-right: 0.381em;
+  }
+}
+
+.btn-courseware-edit {
+  user-select: none;
+  @extend .btn-stroked;
+  @extend .btn-arrowed-right;
+  margin-top: 1em;
+  @include media($desktop) {
+    position: absolute;
+    margin-top: 0;
+    bottom: $unit;
+    right: 0;
+  }
+}

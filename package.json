@@ -1,0 +1,15 @@
+{
+  "name": "atrium-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Atrium Syntax Theme, Medium Grey",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/atom/atrium-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
