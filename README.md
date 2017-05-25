@@ -10,6 +10,6 @@ But seriously just use whatever font you like!
 There is also an Atrium UI theme to go with this.
 And yes that UI theme uses Overpass as its default font.
 
-![Screenshot to be added](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+![Preview](https://github.com/troydraws/atrium-syntax/blob/master/atrium-syntax-preview-1280.jpg?raw=true)
 
 Have fun!
